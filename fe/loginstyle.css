@@ -1,0 +1,119 @@
+:root {
+    --primary-bg: #f4f4f9;
+    --primary-text: #333;
+    --secondary-text: #888;
+    --accent-color: #6a5acd;
+    --button-bg: #000;
+    --button-hover: #333;
+    --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --border-radius: 16px;
+    --input-border: #ddd;
+    --container-padding: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-logo img {
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--primary-text);
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+.signup-link {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+}
+
+.signup-link a {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
