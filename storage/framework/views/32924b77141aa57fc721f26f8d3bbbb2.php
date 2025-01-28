@@ -7,17 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="{{asset('/auth/styles.css')}}" rel="stylesheet">
+    <link href="<?php echo e(asset('/auth/styles.css')); ?>" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
         <div class="login-logo">
-            <img src="{{asset('img/icons/logo.png') }}" alt="Logo">
+            <img src="<?php echo e(asset('img/icons/logo.png')); ?>" alt="Logo">
         </div>
         <h2>Log in to your account</h2>
         <p class="subtitle">Log in to your account for a better experience.</p>
-        <form method="POST" action="{{route('login-user')}}">
-            @csrf
+        <form method="POST" action="<?php echo e(route('login-user')); ?>">
+            <?php echo csrf_field(); ?>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="youremail@gmail.com" required>
@@ -32,3 +32,4 @@
     </div>
 </body>
 </html>
+<?php /**PATH C:\xampp\htdocs\rekap itho\olah_store\resources\views/auth/login.blade.php ENDPATH**/ ?>

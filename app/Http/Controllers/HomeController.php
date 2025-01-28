@@ -11,15 +11,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // Periksa apakah user sudah login
-        if (!Session::has('loginId')) {
-            return redirect()->route('login')->with('fail', 'You must be logged in');
-        }
-
-        // Tampilkan halaman home jika login
-        $data = 'example';
-        return view('home', compact('data'));
-
+        return view('home.index', [
+            'title' => 'Home'
+        ]);
     }
 
     /**

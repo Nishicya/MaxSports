@@ -7,16 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="{{ asset('/auth/styles.css') }}" rel="stylesheet">
+    <link href="{{asset('/auth/styles.css')}}" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
-        <div class="login-logo">
-            <img src="{{ asset('img/icons/logo.png') }}" alt="Logo">
+        <div class="signup-logo">
+            <img src="{{asset('img/icons/logo.png') }}" alt="Logo">
         </div>
         <h2>Create your account</h2>
         <p class="subtitle">Start renting with an account for a better experience.</p>
-        <form action="{{ route('register-user') }}" method="POST">
+        <form action="{{route('register-user') }}" method="POST">
             @if(Session::has('success'))
             <div class="alert alert-success">{{ Session::get('success') }}</div>
             @endif
@@ -41,7 +41,7 @@
             </div>
             <button type="submit">Create Account</button>
         </form>
-        <p class="login-link">Already have an account? <a href="{{ route('login') }}">Login</a></p>
+        <p class="login-link">Already have an account? <a href="/login">Login</a></p>
     </div>
 </body>
 </html>

@@ -1,4 +1,5 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,11 +7,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
 }
 
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,6 @@ nav {
 }
 
 nav .logo {
-    font-family: "Poppins", serif;
     font-weight: 700;
     font-size: 1.75rem;
     color: #fff;
@@ -31,8 +30,6 @@ nav .logo {
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
@@ -45,7 +42,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -72,8 +69,8 @@ nav .auth-buttons a {
     padding: 5px 20px;
     border-radius: 10px;
     font-size: 0.9rem;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
     text-decoration: none;
     background-color: #fff; 
     color: #000;
@@ -85,6 +82,7 @@ nav .auth-buttons a:hover {
     color: #fff;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     background-image: url('/img/Homebg.png');
@@ -105,7 +103,6 @@ nav .auth-buttons a:hover {
     z-index: 2;
     max-width: 800px;
     padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -114,18 +111,16 @@ nav .auth-buttons a:hover {
 
 .hero-content h1 {
     font-size: 3em;
-    font-family: "Poppins", serif;
     font-weight: 700;
-    line-height: 0;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-family: "Poppins", serif;
     font-weight: 400;
     font-size: 1.5em;
     margin-bottom: 30px;
-    line-height: 0.5;
+    line-height: 1.5;
 }
 
 .hero-content button {
@@ -133,7 +128,6 @@ nav .auth-buttons a:hover {
     color: #000;
     border: none;
     padding: 10px 30px;
-    font-family: "Poppins", serif;
     font-weight: 500;
     font-size: 1em;
     margin-top: 20px;
@@ -146,7 +140,6 @@ nav .auth-buttons a:hover {
     background-color: #333;
     color: #fff;
 }
-
 
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -163,18 +156,18 @@ nav .auth-buttons a:hover {
     }
 }
 
+/* Container Styles */
 .container {
     max-width: 1200px;
-
 }
 
+/* Product Section */
 .itemsell {
     background-image: url('/img/redbg.png');
     padding: 20px 20px;
-    font-family: "Poppins", serif;
     font-weight: 500;
-    font-style: normal;
 }
+
 .card {
     border: none;
     border-radius: 12px;
@@ -213,12 +206,9 @@ nav .auth-buttons a:hover {
     font-size: 1em;
     background-color: #333;
     color: #fff;
-    font-family: "Poppins", serif;
     font-weight: 500;
-    font-style: normal;
     border: none;
     border-radius: 5px;
-    align-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -228,6 +218,7 @@ nav .auth-buttons a:hover {
     color: #fff;
 }
 
+/* Contact Section */
 .contact {
     background-image: url('/img/contactbg.png');
     color: #fff;
@@ -238,9 +229,7 @@ nav .auth-buttons a:hover {
 .contact form {
     max-width: 600px;
     margin: 0 auto;
-    font-family: "Poppins", serif;
     font-weight: 600;
-    font-style: normal;
 }
 
 .contact input, .contact textarea {
@@ -255,11 +244,10 @@ nav .auth-buttons a:hover {
     background-color: #fff;
     color: #000;
     border: none;
-    padding: 5px 15px;
+    padding: 10px 20px;
     font-size: 1em;
     border-radius: 5px;
-    display: flex;
-    text-align: right;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -268,6 +256,7 @@ nav .auth-buttons a:hover {
     color: #fff;
 }
 
+/* Footer Section */
 .footer {
     background-color: #000;
     color: #fff;
@@ -278,13 +267,11 @@ nav .auth-buttons a:hover {
 .footer h3 {
     font-size: 1.5em;
     font-weight: 700;
-    color: #fff;
 }
 
 .footer p {
     font-size: 1em;
     line-height: 1.5;
-    color: #fff;
 }
 
 .footer a {
@@ -298,7 +285,6 @@ nav .auth-buttons a:hover {
 }
 
 .footer .social-icons a {
-    gap: 10px;
     margin: 0 5px;
     display: inline-block;
 }
